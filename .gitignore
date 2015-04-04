@@ -1,0 +1,11 @@
+/bin/**
+/proj.android/assets/**
+/proj.android/bin/**
+/proj.android/.settings/**
+/proj.android/gen/**
+/proj.ios_mac/**
+/proj.win8.1-universal/**
+/proj.win32/**
+/proj.wp8-xaml/**
+.cocos-project.json
+CMakeLists.txt.user
