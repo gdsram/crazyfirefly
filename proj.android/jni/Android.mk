@@ -12,7 +12,6 @@ LOCAL_MODULE_FILENAME := libcocos2dcpp
 
 LOCAL_SRC_FILES := hellocpp/main.cpp \
 	../../Classes/app_delegate.cpp \
-	../../Classes/horizontal_bar.cpp \
 	../../Classes/items/item.cpp \
 	../../Classes/scenes/main_menu_scene.cpp \
 	../../Classes/award_container.cpp \
@@ -23,9 +22,10 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
 	../../Classes/scenes/pause_scene.cpp \
 	../../Classes/scenes/credits.cpp \
 	../../Classes/global_colaboration.cpp \
-	../../Classes/health.cpp \
+	../../Classes/items/horizontal_bar.cpp \
+	../../Classes/items/health.cpp \
 	../../Classes/app_macros.h \
-	../../Classes/player.cpp
+	../../Classes/items/player.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../

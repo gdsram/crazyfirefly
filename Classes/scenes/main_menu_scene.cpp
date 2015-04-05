@@ -1,6 +1,6 @@
 #include "scenes/main_menu_scene.h"
 
-#include "SimpleAudioEngine.h"
+#include "audio/include/SimpleAudioEngine.h"
 
 #include "app_macros.h"
 #include "global_colaboration.h"

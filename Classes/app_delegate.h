@@ -11,10 +11,17 @@ The reason for implement as private inheritance is to hide some interface call b
 class  AppDelegate : private cocos2d::Application
 {
 public:
-    AppDelegate();
-    virtual ~AppDelegate();
+    AppDelegate() = default;
 
-    virtual void initGLContextAttrs();
+    AppDelegate(const AppDelegate&) = delete;
+    AppDelegate& operator=(const AppDelegate&) = delete;
+
+    AppDelegate(const AppDelegate&&) = delete;
+    AppDelegate& operator=(const AppDelegate&&) = delete;
+
+    ~AppDelegate() = default;
+
+    //virtual void initGLContextAttrs();
 
     /**
     @brief    Implement Director and Scene init code here.

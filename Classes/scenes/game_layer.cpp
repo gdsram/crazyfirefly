@@ -2,7 +2,7 @@
 
 #include <functional>
 #include "../cocos2d/external/flatbuffers/util.h"
-#include "SimpleAudioEngine.h"
+#include "audio/include/SimpleAudioEngine.h"
 
 #include "scenes/game_over_scene.h"
 #include "scenes/pause_scene.h"

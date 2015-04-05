@@ -1,7 +1,7 @@
 #include "scenes/game_over_scene.h"
 
 #include "../cocos2d/external/flatbuffers/util.h"
-#include "SimpleAudioEngine.h"
+#include "audio/include/SimpleAudioEngine.h"
 
 #include "global_colaboration.h"
 #include "scenes/awards_wall.h"

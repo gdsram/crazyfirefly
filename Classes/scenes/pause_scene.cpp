@@ -1,6 +1,6 @@
 #include "scenes/pause_scene.h"
 
-#include "SimpleAudioEngine.h"
+#include "audio/include/SimpleAudioEngine.h"
 
 #include "scenes/awards_wall.h"
 #include "scenes/game_layer.h"

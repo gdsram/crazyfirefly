@@ -1,18 +1,11 @@
 #include "app_delegate.h"
 
-#include "SimpleAudioEngine.h"
+#include "audio/include/SimpleAudioEngine.h"
 
 #include "app_macros.h"
 #include "scenes/main_menu_scene.h"
 
-AppDelegate::AppDelegate() 
-{
-}
-
-AppDelegate::~AppDelegate() 
-{
-}
-
+/*
 //if you want a different context,just modify the value of glContextAttrs
 //it will takes effect on all platforms
 void AppDelegate::initGLContextAttrs()
@@ -23,6 +16,7 @@ void AppDelegate::initGLContextAttrs()
 
     cocos2d::GLView::setGLContextAttrs(glContextAttrs);
 }
+*/
 
 bool AppDelegate::applicationDidFinishLaunching() {
 
@@ -66,5 +60,5 @@ void AppDelegate::applicationDidEnterBackground() {
 void AppDelegate::applicationWillEnterForeground() {
     cocos2d::Director::getInstance()->startAnimation();
 	// resuming audio
-    CocosDenshion::SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
+    CocosDenshion::SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
 }

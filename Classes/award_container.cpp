@@ -1,6 +1,6 @@
 ﻿#include "award_container.h"
 
-#include "SimpleAudioEngine.h"
+#include "audio/include/SimpleAudioEngine.h"
 
 AwardContainer::AwardContainer(float paddingY)
     : Sprite()
