@@ -9,3 +9,7 @@
 /proj.wp8-xaml/**
 .cocos-project.json
 CMakeLists.txt.user
+cocos2d
+proj.android
+proj.linux
+.vscode
