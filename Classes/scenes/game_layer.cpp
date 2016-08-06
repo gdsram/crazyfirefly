@@ -81,7 +81,7 @@ bool GameLayer::init()
     }
 
     #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    setKeepScreenOnJni(true);
+    cocos2d::Device::setKeepScreenOn(true);
     #endif
 
     this->initAudio();
@@ -152,7 +152,7 @@ void GameLayer::onAcceleration(cocos2d::Acceleration *acc, cocos2d::Event *event
 void GameLayer::goToPauseScene(Ref *pSender)
 {
     #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    setKeepScreenOnJni(false);
+    cocos2d::Device::setKeepScreenOn(false);
     #endif
 
     CocosDenshion::SimpleAudioEngine::getInstance()->pauseBackgroundMusic();
@@ -164,7 +164,7 @@ void GameLayer::goToPauseScene(Ref *pSender)
 void GameLayer::goToGameOverScene()
 {
     #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    setKeepScreenOnJni(false);
+    cocos2d::Device::setKeepScreenOn(false);
     #endif
 
     C_GLOBAL_COLABORATION_->setMaxBonusItem(_bonusItemsConsecutively);
