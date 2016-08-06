@@ -1,8 +1,6 @@
 #include "scenes/game_over_scene.h"
-
 #include "../cocos2d/external/flatbuffers/util.h"
 #include "audio/include/SimpleAudioEngine.h"
-
 #include "global_colaboration.h"
 #include "scenes/awards_wall.h"
 #include "scenes/game_layer.h"
@@ -13,9 +11,7 @@ cocos2d::Scene* GameOverScene::createScene(int lastScore)
     auto scene = cocos2d::Scene::create();
     auto layer = GameOverScene::create();
     layer->setLabelValue(lastScore);
-
     scene->addChild(layer);
-
     return scene;
 }
 
