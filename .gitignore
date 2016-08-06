@@ -1,8 +1,11 @@
+**.*~
 /bin/**
 /proj.android/assets/**
 /proj.android/bin/**
 /proj.android/.settings/**
 /proj.android/gen/**
+/proj.android/obj/**
+/proj.android/libs/**
 /proj.ios_mac/**
 /proj.win8.1-universal/**
 /proj.win32/**
@@ -10,6 +13,5 @@
 .cocos-project.json
 CMakeLists.txt.user
 cocos2d
-proj.android
-proj.linux
 .vscode
+linux-build
