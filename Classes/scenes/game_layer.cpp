@@ -1,16 +1,9 @@
-#include "scenes/game_layer.h"
-
-#include <functional>
 #include "../cocos2d/external/flatbuffers/util.h"
 #include "audio/include/SimpleAudioEngine.h"
-
+#include "scenes/game_layer.h"
 #include "scenes/game_over_scene.h"
 #include "scenes/pause_scene.h"
 #include "global_colaboration.h"
-
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-#include "../cocos2d/cocos/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxHelper.h"
-#endif
 
 GameLayer::GameLayer()
     : _player{ nullptr }
